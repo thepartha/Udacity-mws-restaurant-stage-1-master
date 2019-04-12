@@ -1,0 +1,19 @@
+{
+  "name": "udacity-mws-restaurant-stage-1-master",
+  "version": "1.0.0",
+  "description": "--- #### _Three Stage Course Material Project - Restaurant Reviews_",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thepartha/Udacity-mws-restaurant-stage-1-master.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thepartha/Udacity-mws-restaurant-stage-1-master/issues"
+  },
+  "homepage": "https://github.com/thepartha/Udacity-mws-restaurant-stage-1-master#readme"
+}

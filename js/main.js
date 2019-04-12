@@ -13,6 +13,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
   fetchCuisines();
 });
 
+//Service Worker
+if('serviceWorker' in navigator){
+  navigator.serviceWorker
+    .register('/sw.js')
+    .catch(function(error){
+      console.error(error);
+    });
+}
+
 /**
  * Fetch all neighborhoods and set their HTML.
  */
@@ -161,6 +170,9 @@ createRestaurantHTML = (restaurant) => {
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.srcset = DBHelper.imageSrcsetForRestaurant(restaurant);
+  image.sizes = DBHelper.imageSizesForRestaurant();
+
   li.append(image);
 
   const name = document.createElement('h1');
